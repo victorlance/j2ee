@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean   id="p1" class="test.Personne" >
+<property name="nom" value="ben jaafar"></property>
+<property name="prenom" value="mariem"></property>
+<property name="cin" value="00125558"></property>
+</bean>
+<bean   id="v1" class="test.Voiture" >
+<property name="marque" value="citroene"></property>
+<property name="matricule" value=""></property>
+<property name="proprietaire" ref="p1"></property>
+</bean>
+
+</beans>
